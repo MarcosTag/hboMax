@@ -1,0 +1,21 @@
+/**
+ *
+ *  RESET CSS ************************************************************************************************
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* --bg-main-hbo: #120c1d; */
+  --bg-main-hbo: #000;
+}
+
+body {
+  background: var(--bg-main-hbo);
+  color: whitesmoke;
+  font-family: "Poppins";
+  font-weight: 200;
+}
