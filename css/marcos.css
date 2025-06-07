@@ -1,0 +1,27 @@
+.logo {
+  display: flex;
+  padding: 0.3125rem 0;
+}
+
+header {
+  position: fixed;
+  #hamburger-menu {
+    margin-right: 24px;
+  }
+
+  a.btn.btn-primary {
+    margin-left: auto;
+  }
+
+  #hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 2.5px;
+    .bars {
+      width: 25px;
+      height: 2px;
+      background: var(--color-light);
+    }
+  }
+}
