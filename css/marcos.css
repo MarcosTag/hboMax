@@ -5,6 +5,7 @@
 
 header {
   position: fixed;
+
   #hamburger-menu {
     margin-right: 24px;
   }
@@ -22,6 +23,65 @@ header {
       width: 25px;
       height: 2px;
       background: var(--color-light);
+    }
+  }
+
+  .box-nav {
+    .logo {
+      margin-right: 16px;
+    }
+
+    .main-menu {
+      display: none;
+    }
+  }
+
+  > a.btn.btn-secondary {
+    display: none;
+  }
+
+  > a.btn.btn-primary {
+    margin-left: auto;
+  }
+}
+
+/** VERIFICAR ESTE BREAK POINT*/
+@media (min-width: 1059px) {
+  header {
+    #hamburger-menu {
+      display: none;
+    }
+
+    .box-nav {
+      display: flex;
+      align-items: center;
+      .main-menu {
+        display: flex;
+        > ul {
+          list-style: none;
+          display: flex;
+
+          a.btn.btn-secondary {
+            display: flex;
+            font-size: 12.5px;
+            letter-spacing: 1px;
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 461px) {
+  header {
+    > a.btn.btn-secondary {
+      display: block;
+      margin-left: auto;
+    }
+
+    > a.btn.btn-primary {
+      margin-left: initial;
     }
   }
 }

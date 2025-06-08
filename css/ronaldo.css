@@ -1,129 +1,123 @@
 /* MOBILE */
 section#estreando {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-areas:
-        'texto texto'
-        'beleza the_last'
-        'the_white the_pit '
-        'mickey hacks'
-        'estreia estreia'
-    ;
-    /* ESPAÇO EXTERNO */
-    padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "texto texto"
+    "beleza the_last"
+    "the_white the_pit "
+    "mickey hacks"
+    "estreia estreia";
+  /* ESPAÇO EXTERNO */
+  padding: 1rem;
 }
 
 #texto {
-    text-align: center;
-    grid-column: 1 / -1;
+  text-align: center;
+  grid-column: 1 / -1;
 }
 
 #texto h2 {
-    color: hsla(0, 0%, 100%, .8);
-    font-size: 1.97rem;
-    margin-bottom: 1rem;
+  color: hsla(0, 0%, 100%, 0.8);
+  font-size: 1.97rem;
+  margin-bottom: 1rem;
 }
 
 section#estreando img {
-    width: 100%;
-    height: auto;
-    /* AJUSTA A IMAGEM, SEM DISTORCER O CONTEUDO */
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  /* AJUSTA A IMAGEM, SEM DISTORCER O CONTEUDO */
+  object-fit: cover;
 }
 
-
-
 #lancamento1 {
-    grid-area: beleza;
+  grid-area: beleza;
 }
 
 #lancamento2 {
-    grid-area: the_last;
+  grid-area: the_last;
 }
 
 #lancamento3 {
-    grid-area: the_white;
+  grid-area: the_white;
 }
 
 #lancamento4 {
-    grid-area: the_pit;
+  grid-area: the_pit;
 }
 
 #lancamento5 {
-    grid-area: mickey;
+  grid-area: mickey;
 }
 
 #lancamento6 {
-    grid-area: hacks;
+  grid-area: hacks;
 }
 
 .btn.btn-primary.estreia {
-    grid-area: estreia;
-    background-color: white;
+  grid-area: estreia;
+  /* background-color: white;
     color: black;
     border-radius: 8px;
     font-weight: 600;
     font-size: 0.85rem;
     padding: 0.758rem 1.5rem;
-    text-align: center;
-    margin: 0.5rem auto;
+    text-align: center;*/
+  margin: 0.5rem auto;
 }
 
 /* DESKTOP - RESPONSIVIDADE */
 
 @media (min-width: 768px) {
+  /* ESTREIAS */
+  .estreias {
+    width: 100%;
+    margin: 0 auto;
+  }
 
-    /* ESTREIAS */
-    .estreias {
-        width: 100%;
-        margin: 0 auto;
-    }
+  section#estreando {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "texto texto texto"
+      "beleza the_last the_white"
+      "the_pit mickey hacks"
+      "estreia estreia estreia";
+    /* ESPAÇO ENTRE OS CARDS */
+    gap: 2rem;
+    /* LIMITA A LARGURA TOTAL */
+    max-width: 1250px;
+    /* CENTRALIZA O GRID */
+    margin: 0 auto;
+    /* ESPAÇO EXTERNO */
+    padding: 4rem;
+  }
 
+  section#estreando img {
+    width: 100%;
+    /* ALTURA UNIFORME PARA TODAS AS IMAGENS */
+    height: 190px;
+    /* PREENCHE O ESPAÇO CORTANDO PARTES SE NECESSÁRIO  */
+    object-fit: cover;
+    display: block;
+    height: auto;
+  }
 
-    section#estreando {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas:
-            'texto texto texto'
-            'beleza the_last the_white'
-            'the_pit mickey hacks'
-            'estreia estreia estreia'
-        ;
-        /* ESPAÇO ENTRE OS CARDS */
-        gap: 2rem;
-        /* LIMITA A LARGURA TOTAL */
-        max-width: 1250px;
-        /* CENTRALIZA O GRID */
-        margin: 0 auto;
-        /* ESPAÇO EXTERNO */
-        padding: 4rem;
-    }
+  #texto h2 {
+    color: hsla(0, 0%, 100%, 0.8);
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+  }
 
-    section#estreando img {
-        width: 100%;
-        /* ALTURA UNIFORME PARA TODAS AS IMAGENS */
-        height: 190px;
-        /* PREENCHE O ESPAÇO CORTANDO PARTES SE NECESSÁRIO  */
-        object-fit: cover;
-        display: block;
-        height: auto;
-    }
-
-    #texto h2 {
-        color: hsla(0, 0%, 100%, .8);
-        font-size: 2.7rem;
-        margin-bottom: 1rem;
-    }
-
-    .btn.btn-primary.estreia {
-        grid-area: estreia;
-        background-color: white;
+  .btn.btn-primary.estreia {
+    grid-area: estreia;
+    /* background-color: white;
         color: black;
         border-radius: 8px;
         font-weight: 600;
         font-size: 0.85rem;
         padding: 0.758rem 1.5rem;
-        text-align: center;
-        margin: 0 auto;
-    }
+        text-align: center; */
+    margin: 0 auto;
+  }
 }
