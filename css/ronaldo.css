@@ -3,7 +3,7 @@
 /* *********** SECTION CAPA ********************* */
 
 .sessao-capa {
-  margin-top: 60px;
+  /* margin-top: 60px; */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,8 @@
 
 /* IMAGEM DE FUNDO */
 #capa {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url('../arquivos_necessarios/max_capa.avif');
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+    url("../arquivos_necessarios/max_capa.avif");
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -108,7 +109,6 @@ section#estreando img {
 /* DESKTOP - RESPONSIVIDADE */
 
 @media (min-width: 768px) {
-
   /* ESTREIAS */
   .estreias {
     width: 100%;
