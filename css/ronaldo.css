@@ -1,4 +1,42 @@
 /* MOBILE */
+
+/* *********** SECTION CAPA ********************* */
+
+.sessao-capa {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* IMAGEM DE FUNDO */
+#capa {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)), url('../arquivos_necessarios/max_capa.avif');
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.2rem;
+  padding-top: 230px;
+  background-size: cover;
+}
+
+/* IMAGEM A FRENTE */
+#img-capa {
+  margin-top: 2px;
+  text-align: center;
+}
+
+.planos {
+  color: white;
+  font-size: 1.5rem;
+  font: normal;
+  margin: 15px;
+}
+
+/* *********** FIM SECTION CAPA ********************* */
+
+/* ESTREIAS */
 section#estreando {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -9,7 +47,7 @@ section#estreando {
     "mickey hacks"
     "estreia estreia";
   /* ESPAÇO EXTERNO */
-  padding: 1rem;
+  padding: 1.3rem;
 }
 
 #texto {
@@ -28,6 +66,7 @@ section#estreando img {
   height: auto;
   /* AJUSTA A IMAGEM, SEM DISTORCER O CONTEUDO */
   object-fit: cover;
+  padding: 2px;
 }
 
 #lancamento1 {
@@ -69,6 +108,7 @@ section#estreando img {
 /* DESKTOP - RESPONSIVIDADE */
 
 @media (min-width: 768px) {
+
   /* ESTREIAS */
   .estreias {
     width: 100%;

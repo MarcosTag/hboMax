@@ -1,64 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Equipe 2 - Projeto HBO Max</title>
-    <link rel="stylesheet" href="css/style.css" />
 
-    <!-- biblioteca de icones -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Equipe 2 - Projeto HBO Max</title>
+  <link rel="stylesheet" href="css/style.css" />
 
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- CABEÇALHO / MENU NAVEGAÇÃO -->
+  <!-- biblioteca de icones -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-    <header id="cabecalho">
-      <a href="/" id="hamburger-menu">
-        <div class="bars"></div>
-        <div class="bars"></div>
-        <div class="bars"></div>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- CABEÇALHO / MENU NAVEGAÇÃO -->
+
+  <header id="cabecalho">
+    <a href="/" id="hamburger-menu">
+      <div class="bars"></div>
+      <div class="bars"></div>
+      <div class="bars"></div>
+    </a>
+    <div class="box-nav">
+      <a href="/" class="logo">
+        <img src="./arquivos_necessarios/max_logo.png" alt="" width="110" height="30" />
       </a>
-      <div class="box-nav">
-        <a href="/" class="logo">
-          <img
-            src="./arquivos_necessarios/max_logo.png"
-            alt=""
-            width="110"
-            height="30"
-          />
-        </a>
-        <nav class="main-menu">
-          <ul>
-            <li><a href="/" class="btn btn-secondary">Filmes</a></li>
-            <li><a href="/" class="btn btn-secondary">Séries de TV</a></li>
-            <li>
-              <a href="/" class="btn btn-secondary">Crianças e Família</a>
-            </li>
-            <li><a href="/" class="btn btn-secondary">Marcas</a></li>
-            <li><a href="/" class="btn btn-secondary">Episódios Grátis</a></li>
-            <li><a href="/" class="btn btn-secondary">Futebol</a></li>
-          </ul>
-        </nav>
-      </div>
-      <a href="#" class="btn btn-secondary">Entrar</a>
-      <a href="#" class="btn btn-primary">Assine Agora</a>
-    </header>
+      <nav class="main-menu">
+        <ul>
+          <li><a href="/" class="btn btn-secondary">Filmes</a></li>
+          <li><a href="/" class="btn btn-secondary">Séries de TV</a></li>
+          <li>
+            <a href="/" class="btn btn-secondary">Crianças e Família</a>
+          </li>
+          <li><a href="/" class="btn btn-secondary">Marcas</a></li>
+          <li><a href="/" class="btn btn-secondary">Episódios Grátis</a></li>
+          <li><a href="/" class="btn btn-secondary">Futebol</a></li>
+        </ul>
+      </nav>
+    </div>
+    <a href="#" class="btn btn-secondary">Entrar</a>
+    <a href="#" class="btn btn-primary">Assine Agora</a>
+  </header>
 
+  <main>
     <!--
             * adicione efeitos ao passar o mouse sobre (pode escolher ou fazer como no site oficial)
             *
@@ -67,11 +58,23 @@
     <!-- **/FIM CABEÇALHO ****************************************************** RESPONSÁVEL -->
 
     <!-- CAPA -->
-    <!--
-            * Criar área com imagem de fundo e aplicar degradê de fundo para criar esse efeito de cobertura da imagem
-            *
-            *
-        -->
+       <!-- CAPA IMAGEM -->
+            <div class="sessao-capa">
+                <section id="capa">
+                    <div id="img-capa">
+                        <h1>
+                            <img src="./arquivos_necessarios/max_logo_branco.png" alt="MAX" width="350">
+                        </h1>
+                    </div>
+                    <div class="planos">
+                        <span>
+                            Planos a partir de R$18,90/mês
+                        </span>
+                    </div>
+                    <a class="btn btn-primary" href="#">Assine Agora</a>
+
+                </section>
+            </div>
     <!-- **/FIM CAPA ****************************************************** RESPONSÁVEL -->
 
     <!-- PLANOS -->
@@ -89,29 +92,16 @@
           <h2>Estreias que vão dar o que falar</h2>
         </div>
         <div id="lancamento1">
-          <img
-            src="./arquivos_necessarios/1_estreia.avif"
-            alt="Beleza Natural"
-          />
+          <img src="./arquivos_necessarios/1_estreia.avif" alt="Beleza Natural" />
         </div>
         <div id="lancamento2">
-          <img
-            src="./arquivos_necessarios/2_estreia.avif"
-            alt="The Last Of Us"
-          />
+          <img src="./arquivos_necessarios/2_estreia.avif" alt="The Last Of Us" />
         </div>
         <div id="lancamento3">
-          <img
-            src="./arquivos_necessarios/3_estreia.avif"
-            alt="The White Lotus"
-          />
+          <img src="./arquivos_necessarios/3_estreia.avif" alt="The White Lotus" />
         </div>
         <div id="lancamento4">
-          <img
-            src="./arquivos_necessarios/4_estreia.avif"
-            alt="The Pit"
-            height="190px"
-          />
+          <img src="./arquivos_necessarios/4_estreia.avif" alt="The Pit" height="190px" />
         </div>
         <div id="lancamento5">
           <img src="./arquivos_necessarios/5_estreia.avif" alt="Mickey 17" />
@@ -124,13 +114,14 @@
       </section>
     </div>
     <!-- **/FIM ESTREIA ****************************************************** RESPONSÁVEL -->
-
-    <!-- FOOTER -->
-    <!--
+  </main>
+  <!-- FOOTER -->
+  <!--
             * Criar área de estreias em 3 colunas, mas ao usar em um celular, ajustar para 2 colunaS apenas
             *
             *
         -->
-    <!-- **/FIM FOOTER ****************************************************** RESPONSÁVEL -->
-  </body>
+  <!-- **/FIM FOOTER ****************************************************** RESPONSÁVEL -->
+</body>
+
 </html>
