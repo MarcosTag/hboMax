@@ -45,6 +45,100 @@ header {
   }
 }
 
+main {
+  .box-plan {
+    padding: 0 15px;
+    > h2.title.title-plan {
+      font-weight: 500;
+      font-size: 1.4rem;
+    }
+
+    .msg-plan {
+      font-weight: 500;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    .togle-btn {
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 500;
+      background: rgba(255, 255, 255, 0.15);
+      max-width: max-content;
+      margin: auto;
+      padding: 4px;
+      border-radius: 100px;
+      position: relative;
+
+      /* border: 1px solid red; */
+      > label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 6px;
+        width: 120px;
+        /* border: 1px solid yellowgreen; */
+        align-self: stretch;
+      }
+    }
+
+    .all-plans {
+      display: none;
+    }
+
+    #monthly-plan:checked,
+    #annual-plan:checked {
+      + .all-plans {
+        display: block;
+      }
+    }
+
+    .area-plans:has(#monthly-plan:checked) {
+      > .togle-btn {
+        label[for="monthly-plan"] {
+          color: var(--bg-main-hbo);
+          position: relative;
+        }
+      }
+      > .togle-btn::before {
+        content: "";
+        display: inline-block;
+        width: 120px;
+        height: 48px;
+        border-radius: 100px;
+        position: absolute;
+        left: 4px;
+        background: var(--color-light);
+        position: absolute;
+      }
+    }
+
+    .area-plans:has(#annual-plan:checked) {
+      > .togle-btn {
+        label[for="annual-plan"] {
+          color: var(--bg-main-hbo);
+          position: relative;
+        }
+      }
+      > .togle-btn::before {
+        content: "";
+        display: inline-block;
+        width: 120px;
+        height: 48px;
+        border-radius: 100px;
+        position: absolute;
+        right: 4px;
+        background: var(--color-light);
+        position: absolute;
+      }
+    }
+  }
+}
+
 /** VERIFICAR ESTE BREAK POINT*/
 @media (min-width: 1059px) {
   header {

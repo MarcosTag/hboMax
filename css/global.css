@@ -59,6 +59,15 @@ a {
   background: var(--secondary-hover);
 }
 
+h2.title {
+  color: var(--color-light);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.97rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 @media (min-width: 461px) {
   .btn {
     padding: 10px 24px;
