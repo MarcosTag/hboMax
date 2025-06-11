@@ -68,7 +68,7 @@ main {
       font-weight: 500;
       background: rgba(255, 255, 255, 0.15);
       max-width: max-content;
-      margin: auto;
+      margin: 1.3rem auto 1.8rem auto;
       padding: 4px;
       border-radius: 100px;
       position: relative;
@@ -80,20 +80,119 @@ main {
         align-items: center;
         text-align: center;
         padding: 6px;
-        width: 120px;
+        width: 112px;
         /* border: 1px solid yellowgreen; */
+        border-radius: 100px;
         align-self: stretch;
+        transition: 0.6s;
+        cursor: pointer;
       }
+
+      > label:hover {
+        background: var(--shadow-hover);
+      }
+    }
+
+    .togle-btn::before {
+      content: "";
+      display: inline-block;
+      width: 112px;
+      height: 48px;
+      border-radius: 100px;
+      position: absolute;
+      left: 4px;
+      background: var(--color-light);
+      position: absolute;
+      transition: 0.3s;
     }
 
     .all-plans {
       display: none;
+      flex-direction: column;
+      align-items: center;
+      gap: 9px;
+
+      .cards-plan {
+        background: var(--color-light);
+        color: var(--bg-main-hbo);
+        padding: 1.25rem 1.5rem;
+        border-radius: 4.5px;
+        width: 100%;
+
+        > h3 {
+          font-weight: 500;
+          border-bottom: var(--line-color);
+          padding-bottom: 6px;
+        }
+
+        > h4 {
+          font-family: "Lato";
+          font-weight: 900;
+          font-size: 30px;
+          text-align: center;
+          margin-top: 10px;
+
+          > em {
+            color: var(--reduce-color);
+            font-family: Poppins;
+            font-style: normal;
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 1.4px;
+            line-height: 100%;
+          }
+
+          > em::before {
+            content: "/";
+            font-size: 8px;
+            font-weight: 600;
+            position: relative;
+            bottom: 1px;
+          }
+        }
+
+        .sub-title {
+          text-align: center;
+          font-weight: 300;
+          margin-top: 8px;
+        }
+
+        > ul {
+          list-style: none;
+          margin-top: 2rem;
+
+          li {
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 180%;
+            position: relative;
+            padding-left: 30px;
+            strong {
+              font-weight: 600;
+            }
+          }
+
+          li::before {
+            font-family: "Font Awesome 6 Free";
+            font-style: normal;
+            font-weight: 600;
+            font-display: block;
+            color: var(--reduce-color);
+            position: absolute;
+            left: 0;
+          }
+        }
+
+        > .btn-aux {
+          margin-top: 20px;
+        }
+      }
     }
 
     #monthly-plan:checked,
     #annual-plan:checked {
       + .all-plans {
-        display: block;
+        display: flex;
       }
     }
 
@@ -104,7 +203,7 @@ main {
           position: relative;
         }
       }
-      > .togle-btn::before {
+      /* > .togle-btn::before {
         content: "";
         display: inline-block;
         width: 120px;
@@ -114,7 +213,7 @@ main {
         left: 4px;
         background: var(--color-light);
         position: absolute;
-      }
+      }  */
     }
 
     .area-plans:has(#annual-plan:checked) {
@@ -125,15 +224,7 @@ main {
         }
       }
       > .togle-btn::before {
-        content: "";
-        display: inline-block;
-        width: 120px;
-        height: 48px;
-        border-radius: 100px;
-        position: absolute;
-        right: 4px;
-        background: var(--color-light);
-        position: absolute;
+        transform: translateX(100%);
       }
     }
   }
@@ -164,6 +255,21 @@ main {
         }
       }
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .box-plan > .area-plans > .all-plans {
+    flex-direction: row;
+    align-items: stretch;
+    margin: auto;
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 575px) {
+  .all-plans > .cards-plan {
+    max-width: 510px;
   }
 }
 

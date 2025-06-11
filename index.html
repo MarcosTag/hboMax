@@ -16,6 +16,11 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,6 +28,14 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    /> -->
   </head>
 
   <body>
@@ -96,8 +109,10 @@
         <div class="area-plans">
           <span class="msg-plan"> Economize até 36% </span>
           <div class="togle-btn">
-            <label for="monthly-plan">Mensal</label>
-            <label for="annual-plan">Anual<br />Parcelado</label>
+            <label class="btn-secondary" for="monthly-plan">Mensal</label>
+            <label class="btn-secondary" for="annual-plan"
+              >Anual<br />Parcelado</label
+            >
           </div>
           <input
             type="radio"
@@ -106,13 +121,94 @@
             hidden
             checked
           />
-          <div class="all-plans" style="background: yellow; color: olive">
-            PLANO MENSAL
+          <div class="all-plans">
+            <div class="cards-plan">
+              <h3>Básico com Anúncios</h3>
+              <h4>R$29,90<em>mês</em></h4>
+              <ul class="benefit-plan">
+                <li class="device-qty">
+                  <strong>2 dispositivos</strong> ao mesmo tempo
+                </li>
+                <li class="resolution">Resolução <strong>Full HD</strong></li>
+              </ul>
+              <a class="btn btn-aux" href="">Escolha seu plano</a>
+            </div>
+            <div class="cards-plan">
+              <h3>Standard</h3>
+              <h4>R$39,90<em>mês</em></h4>
+              <ul class="benefit-plan">
+                <li class="device-qty">
+                  <strong>2 dispositivos</strong> ao mesmo tempo
+                </li>
+                <li class="resolution">Resolução <strong>Full HD</strong></li>
+                <li class="downloads">
+                  <strong>30 Dowloads</strong> para curtir off-line
+                </li>
+              </ul>
+              <a class="btn btn-aux" href="">Escolha seu plano</a>
+            </div>
+            <div class="cards-plan">
+              <h3>Platinum</h3>
+              <h4>R$55,90<em>mês</em></h4>
+              <ul class="benefit-plan">
+                <li class="device-qty">
+                  <strong>4 dispositivos</strong> ao mesmo tempo
+                </li>
+                <li class="resolution">Resolução <strong>Full HD</strong></li>
+                <li class="audio">Áudio <strong>Dolby Atmos</strong></li>
+                <li class="downloads">
+                  <strong>100 Dowloads</strong> para curtir off-line
+                </li>
+              </ul>
+              <a class="btn btn-aux" href="">Escolha seu plano</a>
+            </div>
           </div>
 
           <input type="radio" name="plan-type" id="annual-plan" hidden />
-          <div class="all-plans" style="background: greenyellow; color: olive">
-            PLANO ANUAL
+          <div class="all-plans">
+            <div class="cards-plan">
+              <h3>Básico com Anúncios</h3>
+              <h4>12x R$18,90<em>mês</em></h4>
+              <p class="sub-title">Preço total anual R$226,80</p>
+              <ul class="benefit-plan">
+                <li class="device-qty">
+                  <strong>2 dispositivos</strong> ao mesmo tempo
+                </li>
+                <li class="resolution">Resolução <strong>Full HD</strong></li>
+              </ul>
+              <a class="btn btn-aux" href="">Escolha seu plano</a>
+            </div>
+            <div class="cards-plan">
+              <h3>Standard</h3>
+              <h4>12x R$29,90<em>mês</em></h4>
+              <p class="sub-title">Preço total anual R$358,80</p>
+              <ul class="benefit-plan">
+                <li class="device-qty">
+                  <strong>2 dispositivos</strong> ao mesmo tempo
+                </li>
+                <li class="resolution">Resolução <strong>Full HD</strong></li>
+                <li class="downloads">
+                  <strong>30 Dowloads</strong> para curtir off-line
+                </li>
+              </ul>
+              <a class="btn btn-aux" href="">Escolha seu plano</a>
+            </div>
+            <div class="cards-plan">
+              <h3>Platinum</h3>
+              <h4>12x R$39,90<em>mês</em></h4>
+              <p class="sub-title">Preço total anual R$478,80</p>
+              <ul class="benefit-plan">
+                <li class="device-qty">
+                  <strong>4 dispositivos</strong> ao mesmo tempo
+                </li>
+                <li class="resolution">Resolução <strong>Full HD</strong></li>
+                <li class="audio">Áudio <strong>Dolby Atmos</strong></li>
+                <li class="downloads">
+                  <strong>100 Dowloads</strong> para curtir off-line
+                </li>
+              </ul>
+              <a class="btn btn-aux" href="">Escolha seu plano</a>
+            </div>
           </div>
         </div>
       </div>
