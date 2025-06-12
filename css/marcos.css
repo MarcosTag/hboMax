@@ -51,13 +51,14 @@ main {
     > h2.title.title-plan {
       font-weight: 500;
       font-size: 1.4rem;
+      margin-bottom: 2.5rem;
     }
 
-    .msg-plan {
+    /* .msg-plan {
       font-weight: 500;
       font-size: 12px;
       text-transform: uppercase;
-    }
+    } */
 
     .togle-btn {
       text-transform: uppercase;
@@ -84,8 +85,20 @@ main {
         /* border: 1px solid yellowgreen; */
         border-radius: 100px;
         align-self: stretch;
-        transition: 0.6s;
+        transition: transform 0.6s;
         cursor: pointer;
+        position: relative;
+      }
+
+      > label:last-child::before {
+        content: "Economize até 36%";
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: uppercase;
+        position: absolute;
+        line-height: 1;
+        top: -32px;
+        color: var(--color-light);
       }
 
       > label:hover {
@@ -103,7 +116,8 @@ main {
       left: 4px;
       background: var(--color-light);
       position: absolute;
-      transition: 0.3s;
+      transition: transform 0.3s;
+      z-index: -1;
     }
 
     .all-plans {
@@ -123,6 +137,7 @@ main {
           font-weight: 500;
           border-bottom: var(--line-color);
           padding-bottom: 6px;
+          white-space: nowrap;
         }
 
         > h4 {
@@ -196,6 +211,20 @@ main {
       }
     }
 
+    > .area-plans > p {
+      /* max-width: 1140px; */
+      margin-left: auto;
+      margin-right: auto;
+
+      .notice a {
+        color: var(--aux-color-1);
+      }
+
+      .notice a:hover {
+        text-decoration: underline;
+      }
+    }
+
     .area-plans:has(#monthly-plan:checked) {
       > .togle-btn {
         label[for="monthly-plan"] {
@@ -227,6 +256,16 @@ main {
         transform: translateX(100%);
       }
     }
+
+    p {
+      margin-top: 2.5rem;
+      .notice {
+        font-size: 11px;
+        font-weight: 300;
+        display: inline-block;
+        line-height: 18px;
+      }
+    }
   }
 }
 
@@ -256,20 +295,91 @@ main {
       }
     }
   }
+
+  main {
+    .all-plans {
+      > .cards-plan {
+        > h3 {
+          font-size: 1.5rem;
+          font-weight: 600 !important;
+        }
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) {
-  .box-plan > .area-plans > .all-plans {
-    flex-direction: row;
-    align-items: stretch;
-    margin: auto;
-    max-width: 1140px;
+  div.box-plan > .area-plans {
+    > .all-plans {
+      flex-direction: row;
+      align-items: stretch;
+      margin: auto;
+      max-width: 1140px;
+
+      > .cards-plan {
+        > ul {
+          min-height: 135px;
+        }
+
+        > .btn-aux {
+          margin-top: initial;
+        }
+      }
+    }
+
+    > .togle-btn {
+      > label.btn-secondary {
+        width: 200px;
+      }
+    }
+
+    > .togle-btn::before {
+      width: 200px !important;
+    }
+
+    > p {
+      max-width: 1140px !important;
+    }
   }
 }
 
 @media (min-width: 575px) {
-  .all-plans > .cards-plan {
-    max-width: 510px;
+  div.box-plan {
+    h2.title.title-plan {
+      font-size: 35px;
+    }
+
+    .area-plans {
+      > .all-plans {
+        > .cards-plan {
+          max-width: 510px;
+        }
+      }
+
+      > .togle-btn {
+        > .btn-secondary {
+          font-size: 15px;
+          font-weight: 600;
+          width: 160px;
+          letter-spacing: 1px;
+          line-height: 16px;
+          height: 40px;
+        }
+
+        > label:last-child::before {
+          top: -23px;
+        }
+      }
+
+      > .togle-btn::before {
+        width: 160px;
+        height: 40px;
+      }
+
+      > p {
+        max-width: 510px;
+      }
+    }
   }
 }
 

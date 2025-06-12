@@ -14,11 +14,13 @@
   --color-light: #fff;
 
   --aux-color: #4f6984;
+  --aux-color-1: #4f8bff;
   --reduce-color: rgba(0, 0, 0, 0.6);
   --secondary-hover: rgba(64, 68, 89, 0.6);
   --shadow-hover: rgba(255, 255, 255, 0.15);
 
   --line-color: 1px solid rgba(0, 0, 0, 0.2);
+  --outline-hover: #06093a solid 2px;
 }
 
 header {
@@ -72,7 +74,11 @@ a {
   max-width: max-content;
   margin: auto;
   font-size: 11px;
-  padding: 14px 26px;
+  padding: 14px 26px !important;
+}
+
+.btn-aux:hover {
+  outline: var(--outline-hover);
 }
 
 h2.title {
