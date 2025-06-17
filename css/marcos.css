@@ -308,6 +308,27 @@ main {
   }
 }
 
+/**FOOTER*/
+.social-icons {
+  align-items: center;
+}
+
+.social-icons > a > img {
+  width: 15px;
+  height: 15px;
+  margin: initial;
+}
+
+.social-icons > a:first-child > img {
+  width: 30px;
+  height: 30px;
+}
+
+.social-icons > a:last-child > img {
+  width: 20px;
+  height: 20px;
+}
+
 @media (min-width: 768px) {
   div.box-plan > .area-plans {
     > .all-plans {
@@ -340,6 +361,10 @@ main {
     > p {
       max-width: 1140px !important;
     }
+  }
+
+  .social-icons > a {
+    padding: 12px;
   }
 }
 
