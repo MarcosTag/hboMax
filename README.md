@@ -1,4 +1,4 @@
-<h1>Equipe 3 - Projeto HBO Max</h1>
+<h1>Equipe 2 - Projeto HBO Max</h1>
 <strong>Algumas orientações:</strong>
 <ul>
     <li>Utilizar a biblioteca de icones https://cdnjs.com/libraries/font-awesome;</li>
