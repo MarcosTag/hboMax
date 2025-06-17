@@ -24,7 +24,7 @@
 
 /* IMAGEM A FRENTE */
 #img-capa {
-  margin-top: 2px;
+  margin-top: 130px;
   text-align: center;
 }
 
@@ -104,6 +104,86 @@ section#estreando img {
     padding: 0.758rem 1.5rem;
     text-align: center;*/
   margin: 0.5rem auto;
+}
+
+/*=============RODAPE==================*/
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    font: normal;
+    font-size: 12px;
+    margin: 10px;
+}
+
+footer span a {
+    text-align: center;
+}
+
+.rodape {
+    width: 100%;
+    color: white;
+    margin-top: 80px;
+    text-align: center;
+}
+
+.links-rodape ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    gap: 12px;
+    margin: 10px 0px;
+}
+
+.links-rodape li {
+    list-style: none;
+}
+
+.links-rodape a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: inline-block;
+}
+
+.links-rodape a:hover {
+    background-color: #464646;
+}
+
+ul.acessos li a {
+    font-size: 11px;
+}
+
+.rodape p {
+    font-size: 11px;
+    margin-bottom: 15px;
+    padding: 3px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons img {
+    width: 22px;
+    height: 22px;
+    margin: 15px;
+}
+
+.social-icons img:hover {
+    /* AUMENTA A PROPROCAO DO LINK */
+    transform: scale(1.1);
 }
 
 /* DESKTOP - RESPONSIVIDADE */
