@@ -11,7 +11,7 @@
 
 /* IMAGEM DE FUNDO */
 #capa {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1)),
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0) 40%),
     url("../arquivos_necessarios/max_capa.avif");
   display: flex;
   flex-direction: column;
